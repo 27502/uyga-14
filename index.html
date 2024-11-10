@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation on Functions and Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>JavaScript Concepts</h1>
+    </header>
+    <section class="about_func">
+        <div class="about_f">
+            <h1>
+            What is a Function? <br>
+        </h1>
+        <p>A function is a block of organized, reusable code that performs a single, specific task. In JavaScript, functions are fundamental tools for structuring, managing, and reusing code. Functions help break a program into manageable parts, making it easier to debug, maintain, and extend.
+</p>
+<h1>Key Features of Functions</h1>
+<p><br> Modularity: Functions allow us to compartmentalize code, making programs easier to understand and work on. <br><br>
+    Reusability: Once defined, a function can be called multiple times, reducing repetition and code size. <br><br>
+    Scoping: Functions create their own scope, which helps in controlling variable access and avoiding name conflicts.</p>
+        
+        </div>
+    </section>
+    <main>
+        
+        <section class="topic" id="function">
+            <div>
+               <h2>Functions</h2>
+            <p>Functions allow us to create reusable code blocks that can be called whenever needed. They are a core part of programming.</p>
+            <div class="example-code">
+                <code>
+                    function greet() {<br><br>
+                    &nbsp;&nbsp; console.log("Hello, World!");<br>
+                    }
+                </code>
+            </div>  
+            </div>
+            <div>
+               <h2> Declaring a Function</h2>
+<p>You can declare a function using the function keyword, followed by the function name, parameters, and a code block:</p>
+            <div class="example-code">
+                <code>
+                    function greet(name) { <br><br>
+                        console.log("Hello, " + name + "!");<br>
+                      }
+                      
+                </code>
+            </div>  
+            </div>
+            <div>
+               <h2> To call the function and pass in an argument:</h2>
+
+            <div class="example-code">
+                <code>
+                   
+                    greet("Alice");
+                      
+                </code>
+            </div>  
+            </div>
+            <div>
+               <h2>  Function Parameters and Arguments</h2>
+                <p>Functions can accept parameters (placeholders for values) when they are declared and receive arguments (actual values) when they are called.</p>
+
+            <div class="example-code">
+                <code>
+                    function add(a, b) <br> { <br>
+                        return a + b;<br>
+                      } <br>
+                      
+                      let sum = add(5, 3);<br>
+                      
+                      
+                </code>
+            </div>  
+            </div>
+            
+           
+        </section>
+        <section class="topic" id="date">
+            <div>      <h2>Date</h2>
+            <p>The Date object is used to work with dates and times. It can provide current date/time and be formatted as needed.</p>
+            <div class="example-code">
+                <code>
+                    let today = new Date();<br><br>
+                    console.log(today);
+                </code>
+            </div></div>
+            <div>      
+                <h3>Specific Date and Time:</h3>
+           
+            <div class="example-code">
+                <code>
+                    let specificDate = new Date(2023, 10, 11, 14, 0, 0);
+                </code>
+            </div></div>
+            <div>      
+                <h3> Using a Timestamp:</h3>
+           
+            <div class="example-code">
+                <code>
+                    let dateFromTimestamp = new Date(1681106400000)
+                </code>
+            </div></div>
+            <div>      
+                <h3>Getting Date and Time Components:</h3>
+                <p>The Date object provides methods to retrieve date and time components individually:</p>
+           
+            <div class="example-code">
+                <code>
+                    let year = currentDate.getFullYear(); <br><br>
+                    let month = currentDate.getMonth(); <br><br>
+                    let day = currentDate.getDate(); 
+                    
+                </code>
+            </div></div>
+      
+        </section>
+    </main>
+    <script  src="app.js"></script>
+</body>
+</html>
